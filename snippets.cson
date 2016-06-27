@@ -22,10 +22,67 @@
 
 
 #erb/html
-#ActionView::Helpers::TextHelper
   '.text.html.ruby, .text.html.erb, .text.html.haml':
+#ActionView::Helpers::AssetTagHelper
+    'audio_tag':
+      'prefix': 'audio_tag'
+      'body': 'audio_tag'
+
+    'auto_discovery_link_tag':
+      'prefix': 'auto_discovery_link_tag'
+      'body': 'auto_discovery_link_tag'
+
+    'favicon_link_tag':
+      'prefix': 'favicon_link_tag'
+      'body': 'favicon_link_tag'
+
+    'image_alt':
+      'prefix': 'image_alt'
+      'body': 'image_alt'
+
+    'image_tag':
+      'prefix': 'image_tag'
+      'body': 'image_tag'
+
+    'javascript_include_tag':
+      'prefix': 'javascript_include_tag'
+      'body': 'javascript_include_tag'
+
+    'stylesheet_link_tag':
+      'prefix': 'stylesheet_link_tag'
+      'body': 'stylesheet_link_tag'
+
+    'video_tag':
+      'prefix': 'video_tag'
+      'body': 'video_tag'
+
+#ActionView::Helpers::ActiveModelInstanceTag
+    'content_tag':
+      'prefix': 'content_tag'
+      'body': 'content_tag'
+
+    'error_message':
+      'prefix': 'error_message'
+      'body': 'error_message'
+
+    'error_wrapping':
+      'prefix': 'error_wrapping'
+      'body': 'error_wrapping'
+
+    'object':
+      'prefix': 'object'
+      'body': 'object'
+
+    'tag':
+      'prefix': 'tag'
+      'body': 'tag'
+
+
+
+#ActionView::Helpers::TextHelper
     'Simple Format':
       'prefix': 'simple_format'
+      'body': 'simple_format'
 
     'Simple Format Div':
       'prefix': 'simple_format_div'
@@ -37,6 +94,7 @@
 
     'Concat':
       'prefix': 'concat'
+      'body': 'concat'
 
     'Highlight':
       'prefix': 'highlight'
@@ -144,3 +202,4 @@
     'cache_unless':
       'prefix': 'cache_unless'
       'body': '<% cache_unless admin?, project do %>\n\n<% end %>'
+
