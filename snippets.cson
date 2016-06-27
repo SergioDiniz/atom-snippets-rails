@@ -1,0 +1,72 @@
+# Your snippets
+#
+# Atom snippets allow you to enter a simple prefix in the editor and hit tab to
+# expand the prefix into a larger code block with templated values.
+#
+# You can create a new snippet in this file by typing "snip" and then hitting
+# tab.
+#
+# An example CoffeeScript snippet to expand log to console.log:
+#
+# '.source.coffee':
+#   'Console log':
+#     'prefix': 'log'
+#     'body': 'console.log $1'
+#
+# Each scope (e.g. '.source.coffee' above) can only be declared once.
+#
+# This file uses CoffeeScript Object Notation (CSON).
+# If you are unfamiliar with CSON, you can read more about it in the
+# Atom Flight Manual:
+# https://atom.io/docs/latest/using-atom-basic-customization#cson
+
+
+#erb/html
+#ActionView::Helpers::TextHelper
+  '.text.html.ruby, .text.html.erb, .text.html.haml':
+    'Simple Format':
+      'prefix': 'simple_format'
+
+    'Simple Format Div':
+      'prefix': 'simple_format_div'
+      'body': 'simple_format(my_text, {}, wrapper_tag: \"div\")'
+
+    'Simple Format':
+      'prefix': 'sf'
+      'body': 'simple_format'
+
+    'Concat':
+      'prefix': 'concat'
+
+    'Highlight':
+      'prefix': 'highlight'
+      'body': 'highlight(\'text\', \'phrases\',  options = {})'
+
+    'Pluralize':
+      'prefix': 'pluralize'
+      'body': 'pluralize(count, singular, plural = nil)'
+
+    'Truncate':
+      'prefix': 'truncate'
+      'body': 'truncate(text, options = {}, &block)'
+
+    'Word Wrap':
+      'prefix': 'word_wrap'
+      'body': 'word_wrap(text, options = {})'
+
+#ActionView::Helpers::OutputSafetyHelper
+    'Raw':
+      'prefix': 'raw'
+      'body': 'raw(stringish)'
+
+    'Safe Join':
+      'prefix': 'safe_join'
+      'body': 'safe_join(array, tag_separate)'
+
+#ActionView::Helpers::DateHelper
+    'Date Select':
+      'prefix': 'date_select'
+
+    'Concat':
+      'prefix': 'concat'
+      'body': 'concat'
