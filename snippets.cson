@@ -25,35 +25,35 @@
   '.text.html.ruby, .text.html.erb, .text.html.haml':
 #ActionView::Helpers::AssetTagHelper
     'audio_tag':
-      'prefix': 'audio_tag'
+      'prefix': 'audio_tag_'
       'body': 'audio_tag'
 
     'auto_discovery_link_tag':
-      'prefix': 'auto_discovery_link_tag'
+      'prefix': 'auto_discovery_link_tag_'
       'body': 'auto_discovery_link_tag'
 
     'favicon_link_tag':
-      'prefix': 'favicon_link_tag'
+      'prefix': 'favicon_link_tag_'
       'body': 'favicon_link_tag'
 
     'image_alt':
-      'prefix': 'image_alt'
+      'prefix': 'image_alt_'
       'body': 'image_alt'
 
     'image_tag':
-      'prefix': 'image_tag'
+      'prefix': 'image_tag_'
       'body': 'image_tag'
 
     'javascript_include_tag':
-      'prefix': 'javascript_include_tag'
+      'prefix': 'javascript_include_tag_'
       'body': 'javascript_include_tag'
 
     'stylesheet_link_tag':
-      'prefix': 'stylesheet_link_tag'
+      'prefix': 'stylesheet_link_tag_'
       'body': 'stylesheet_link_tag'
 
     'video_tag':
-      'prefix': 'video_tag'
+      'prefix': 'video_tag_'
       'body': 'video_tag'
 
 #ActionView::Helpers::ActiveModelInstanceTag
@@ -76,6 +76,579 @@
     'tag':
       'prefix': 'tag'
       'body': 'tag'
+
+
+#ActionView::Helpers::AssetUrlHelper
+    'asset_path':
+      'prefix': 'asset_path_'
+      'body': 'asset_path'
+
+    'asset_url':
+      'prefix': 'asset_url_'
+      'body': 'asset_url'
+
+    'audio_path':
+      'prefix': 'audio_path_'
+      'body': 'audio_path'
+
+    'audio_url':
+      'prefix': 'audio_url_'
+      'body': 'audio_url'
+
+    'compute_asset_extname':
+      'prefix': 'compute_asset_extname_'
+      'body': 'compute_asset_extname'
+
+    'compute_asset_host':
+      'prefix': 'compute_asset_host_'
+      'body': 'compute_asset_host'
+
+    'compute_asset_path':
+      'prefix': 'compute_asset_path_'
+      'body': 'compute_asset_path'
+
+    'font_path':
+      'prefix': 'font_path_'
+      'body': 'font_path'
+
+    'font_url':
+      'prefix': 'font_url_'
+      'body': 'font_url'
+
+    'image_path':
+      'prefix': 'image_path_'
+      'body': 'image_path'
+
+    'image_url':
+      'prefix': 'image_url_'
+      'body': 'image_url'
+
+    'javascript_path':
+      'prefix': 'javascript_path_'
+      'body': 'javascript_path'
+
+    'javascript_url':
+      'prefix': 'javascript_url_'
+      'body': 'javascript_url'
+
+    'path_to_asset':
+      'prefix': 'path_to_asset_'
+      'body': 'path_to_asset'
+
+    'path_to_audio':
+      'prefix': 'path_to_audio_'
+      'body': 'path_to_audio'
+
+    'path_to_font':
+      'prefix': 'path_to_font_'
+      'body': 'path_to_font'
+
+    'path_to_image':
+      'prefix': 'path_to_image_'
+      'body': 'path_to_image'
+
+    'path_to_javascript':
+      'prefix': 'path_to_javascript_'
+      'body': 'path_to_javascript'
+
+    'path_to_stylesheet':
+      'prefix': 'path_to_stylesheet_'
+      'body': 'path_to_stylesheet'
+
+    'path_to_video':
+      'prefix': 'path_to_video_'
+      'body': 'path_to_video'
+
+    'stylesheet_path':
+      'prefix': 'stylesheet_path_'
+      'body': 'stylesheet_path'
+
+    'stylesheet_url':
+      'prefix': 'stylesheet_url_'
+      'body': 'stylesheet_url'
+
+    'url_to_asset':
+      'prefix': 'url_to_asset_'
+      'body': 'url_to_asset'
+
+    'url_to_audio':
+      'prefix': 'url_to_audio_'
+      'body': 'url_to_audio'
+
+    'url_to_font':
+      'prefix': 'url_to_font_'
+      'body': 'url_to_font'
+
+    'url_to_image':
+      'prefix': 'url_to_image_'
+      'body': 'url_to_image'
+
+    'url_to_javascript':
+      'prefix': 'url_to_javascript_'
+      'body': 'url_to_javascript'
+
+    'url_to_stylesheet':
+      'prefix': 'url_to_stylesheet_'
+      'body': 'url_to_stylesheet'
+
+    'url_to_video':
+      'prefix': 'url_to_video_'
+      'body': 'url_to_video'
+
+    'video_path':
+      'prefix': 'video_path_'
+      'body': 'video_path'
+
+    'video_url':
+      'prefix': 'video_url_'
+      'body': 'video_url'
+
+#ActionView::Helpers::AtomFeedHelper
+    'atom_feed':
+      'prefix': 'atom_feed_'
+      'body': 'atom_feed'
+
+#ActionView::Helpers::CacheHelper
+    'cache':
+      'prefix': 'cache_method'
+      'body': '<% cache project do %>\n\n<% end %>'
+
+    'cache_fragment_name':
+      'prefix': 'cache_fragment_name'
+      'body': 'cache_fragment_name'
+
+    'cache_if':
+      'prefix': 'cache_if'
+      'body': '<% cache_if admin?, project do %>\n\n<% end %>'
+
+    'cache_unless':
+      'prefix': 'cache_unless'
+      'body': '<% cache_unless admin?, project do %>\n\n<% end %>'
+
+
+#ActionView::Helpers::CaptureHelper
+    'capture':
+      'prefix': 'capture_'
+      'body': 'capture'
+
+    'content_for':
+      'prefix': 'content_for_'
+      'body': 'content_for'
+
+    'content_for?':
+      'prefix': 'content_for?_'
+      'body': 'content_for?'
+
+    'provide':
+      'prefix': 'provide_'
+      'body': 'provide'
+
+#ActionView::Helpers::CsrfHelper
+    'csrf_meta_tag':
+      'prefix': 'csrf_meta_tag_'
+      'body': 'csrf_meta_tag'
+
+    'csrf_meta_tags':
+      'prefix': 'csrf_meta_tags_'
+      'body': 'csrf_meta_tags'
+
+#ActionView::Helpers::DateHelper
+    'date_select':
+      'prefix': 'date_select_'
+      'body': 'date_select'
+
+    'datetime_select':
+      'prefix': 'datetime_select_'
+      'body': 'datetime_select'
+
+    'distance_of_time_in_words':
+      'prefix': 'distance_of_time_in_words_'
+      'body': 'distance_of_time_in_words'
+
+    'distance_of_time_in_words_to_now':
+      'prefix': 'distance_of_time_in_words_to_now_'
+      'body': 'distance_of_time_in_words_to_now'
+
+    'select_date':
+      'prefix': 'select_date_'
+      'body': 'select_date'
+
+    'select_datetime':
+      'prefix': 'select_datetime_'
+      'body': 'select_datetime'
+
+    'select_day':
+      'prefix': 'select_day_'
+      'body': 'select_day'
+
+    'select_hour':
+      'prefix': 'select_hour_'
+      'body': 'select_hour'
+
+    'select_minute':
+      'prefix': 'select_minute_'
+      'body': 'select_minute'
+
+    'select_month':
+      'prefix': 'select_month_'
+      'body': 'select_month'
+
+    'select_second':
+      'prefix': 'select_second_'
+      'body': 'select_second'
+
+    'select_time':
+      'prefix': 'select_time_'
+      'body': 'select_time'
+
+    'select_year':
+      'prefix': 'select_year_'
+      'body': 'select_year'
+
+    'time_ago_in_words':
+      'prefix': 'time_ago_in_words_'
+      'body': 'time_ago_in_words'
+
+    'time_select':
+      'prefix': 'time_select_'
+      'body': 'time_select'
+
+    'time_tag':
+      'prefix': 'time_tag_'
+      'body': 'time_tag'
+
+#ActionView::Helpers::DebugHelper
+    'debug':
+      'prefix': 'debug_'
+      'body': 'debug'
+
+#ActionView::Helpers::FormHelper
+    'check_box':
+      'prefix': 'check_box_'
+      'body': 'check_box'
+
+    'color_field':
+      'prefix': 'color_field_'
+      'body': 'color_field'
+
+    'date_field':
+      'prefix': 'date_field_'
+      'body': 'date_field'
+
+    'datetime_field':
+      'prefix': 'datetime_field_'
+      'body': 'datetime_field'
+
+    'datetime_local_field':
+      'prefix': 'datetime_local_field_'
+      'body': 'datetime_local_field'
+
+    'email_field':
+      'prefix': 'email_field_'
+      'body': 'email_field'
+
+    'fields_for':
+      'prefix': 'fields_for_'
+      'body': 'fields_for'
+
+    'file_field':
+      'prefix': 'file_field_'
+      'body': 'file_field'
+
+    'form_for':
+      'prefix': 'form_for_'
+      'body': 'form_for'
+
+    'hidden_field':
+      'prefix': 'hidden_field_'
+      'body': 'hidden_field'
+
+    'label':
+      'prefix': 'label_'
+      'body': 'label'
+
+    'month_field':
+      'prefix': 'month_field_'
+      'body': 'month_field'
+
+    'number_field':
+      'prefix': 'number_field_'
+      'body': 'number_field'
+
+    'password_field':
+      'prefix': 'password_field_'
+      'body': 'password_field'
+
+    'phone_field':
+      'prefix': 'phone_field_'
+      'body': 'phone_field'
+
+    'radio_button':
+      'prefix': 'radio_button_'
+      'body': 'radio_button'
+
+    'range_field':
+      'prefix': 'range_field_'
+      'body': 'range_field'
+
+    'search_field':
+      'prefix': 'search_field_'
+      'body': 'search_field'
+
+    'telephone_field':
+      'prefix': 'telephone_field_'
+      'body': 'telephone_field'
+
+    'text_area':
+      'prefix': 'text_area_'
+      'body': 'text_area'
+
+    'text_field':
+      'prefix': 'text_field_'
+      'body': 'text_field'
+
+    'time_field':
+      'prefix': 'time_field_'
+      'body': 'time_field'
+
+    'url_field':
+      'prefix': 'url_field_'
+      'body': 'url_field'
+
+    'week_field':
+      'prefix': 'week_field_'
+      'body': 'week_field'
+
+
+#ActionView::Helpers::FormOptionsHelper
+    'collection_radio_buttons':
+      'prefix': 'collection_radio_buttons_'
+      'body': 'collection_radio_buttons'
+
+    'collection_select':
+      'prefix': 'collection_select_'
+      'body': 'collection_select'
+
+    'grouped_collection_select':
+      'prefix': 'grouped_collection_select_'
+      'body': 'grouped_collection_select'
+
+    'grouped_options_for_select':
+      'prefix': 'grouped_options_for_select_'
+      'body': 'grouped_options_for_select'
+
+    'option_groups_from_collection_for_select':
+      'prefix': 'option_groups_from_collection_for_select_'
+      'body': 'option_groups_from_collection_for_select'
+
+    'options_for_select':
+      'prefix': 'options_for_select_'
+      'body': 'options_for_select'
+
+    'options_from_collection_for_select':
+      'prefix': 'options_from_collection_for_select_'
+      'body': 'options_from_collection_for_select'
+
+    'select':
+      'prefix': 'select_'
+      'body': 'select'
+
+    'time_zone_options_for_select':
+      'prefix': 'time_zone_options_for_select_'
+      'body': 'time_zone_options_for_select'
+
+    'time_zone_select':
+      'prefix': 'time_zone_select_'
+      'body': 'time_zone_select'
+
+
+#ActionView::Helpers::FormTagHelper
+    'button_tag':
+      'prefix': 'button_tag_'
+      'body': 'button_tag'
+
+    'check_box_tag':
+      'prefix': 'check_box_tag_'
+      'body': 'check_box_tag'
+
+    'color_field_tag':
+      'prefix': 'color_field_tag_'
+      'body': 'color_field_tag'
+
+    'date_field_tag':
+      'prefix': 'date_field_tag_'
+      'body': 'date_field_tag'
+
+    'datetime_field_tag':
+      'prefix': 'datetime_field_tag_'
+      'body': 'datetime_field_tag'
+
+    'datetime_local_field_tag':
+      'prefix': 'datetime_local_field_tag_'
+      'body': 'datetime_local_field_tag'
+
+    'email_field_tag':
+      'prefix': 'email_field_tag_'
+      'body': 'email_field_tag'
+
+    'field_set_tag':
+      'prefix': 'field_set_tag_'
+      'body': 'field_set_tag'
+
+    'file_field_tag':
+      'prefix': 'file_field_tag_'
+      'body': 'file_field_tag'
+
+    'form_tag':
+      'prefix': 'form_tag_'
+      'body': 'form_tag'
+
+    'hidden_field_tag':
+      'prefix': 'hidden_field_tag_'
+      'body': 'hidden_field_tag'
+
+    'image_submit_tag':
+      'prefix': 'image_submit_tag_'
+      'body': 'image_submit_tag'
+
+    'label_tag':
+      'prefix': 'label_tag_'
+      'body': 'label_tag'
+
+    'month_field_tag':
+      'prefix': 'month_field_tag_'
+      'body': 'month_field_tag'
+
+    'number_field_tag':
+      'prefix': 'number_field_tag_'
+      'body': 'number_field_tag'
+
+    'password_field_tag':
+      'prefix': 'password_field_tag_'
+      'body': 'password_field_tag'
+
+    'phone_field_tag':
+      'prefix': 'phone_field_tag_'
+      'body': 'phone_field_tag'
+
+    'radio_button_tag':
+      'prefix': 'radio_button_tag_'
+      'body': 'radio_button_tag'
+
+    'range_field_tag':
+      'prefix': 'range_field_tag_'
+      'body': 'range_field_tag'
+
+    'search_field_tag':
+      'prefix': 'search_field_tag_'
+      'body': 'search_field_tag'
+
+    'select_tag':
+      'prefix': 'select_tag_'
+      'body': 'select_tag'
+
+    'submit_tag':
+      'prefix': 'submit_tag_'
+      'body': 'submit_tag'
+
+    'telephone_field_tag':
+      'prefix': 'telephone_field_tag_'
+      'body': 'telephone_field_tag'
+
+    'text_area_tag':
+      'prefix': 'text_area_tag_'
+      'body': 'text_area_tag'
+
+    'text_field_tag':
+      'prefix': 'text_field_tag_'
+      'body': 'text_field_tag'
+
+    'time_field_tag':
+      'prefix': 'time_field_tag_'
+      'body': 'time_field_tag'
+
+    'url_field_tag':
+      'prefix': 'url_field_tag_'
+      'body': 'url_field_tag'
+
+    'utf8_enforcer_tag':
+      'prefix': 'utf8_enforcer_tag_'
+      'body': 'utf8_enforcer_tag'
+
+    'week_field_tag':
+      'prefix': 'week_field_tag_'
+      'body': 'week_field_tag'
+
+#ActionView::Helpers::JavaScriptHelper
+    'escape_javascript':
+      'prefix': 'escape_javascript_'
+      'body': 'escape_javascript'
+
+    'j':
+      'prefix': 'j_'
+      'body': 'j'
+
+    'javascript_tag':
+      'prefix': 'javascript_tag_'
+      'body': 'javascript_tag'
+
+
+#ActionView::Helpers::NumberHelper
+    'number_to_currency':
+      'prefix': 'number_to_currency_'
+      'body': 'number_to_currency'
+
+    'number_to_human':
+      'prefix': 'number_to_human_'
+      'body': 'number_to_human'
+
+    'number_to_human_size':
+      'prefix': 'number_to_human_size_'
+      'body': 'number_to_human_size'
+
+    'number_to_percentage':
+      'prefix': 'number_to_percentage_'
+      'body': 'number_to_percentage'
+
+    'number_to_phone':
+      'prefix': 'number_to_phone_'
+      'body': 'number_to_phone'
+
+    'number_with_delimiter':
+      'prefix': 'number_with_delimiter_'
+      'body': 'number_with_delimiter'
+
+    'number_with_precision':
+      'prefix': 'number_with_precision_'
+      'body': 'number_with_precision'
+
+#ActionView::Helpers::OutputSafetyHelper
+    'raw':
+      'prefix': 'raw_'
+      'body': 'raw'
+
+    'safe_join':
+      'prefix': 'safe_join_'
+      'body': 'safe_join'
+
+#ActionView::Helpers::RecordTagHelper
+    'content_tag_for':
+      'prefix': 'content_tag_for_'
+      'body': 'content_tag_for'
+
+    'div_for':
+      'prefix': 'div_for_'
+      'body': 'div_for'
+
+#ActionView::Helpers::RenderingHelper
+    '_layout_for':
+      'prefix': 'render_layout_'
+      'body': '<%= render layout: "my_layout" do |customer| %>\n  Hello <%= customer.name %>\n<% end %>'
+
+    'render':
+      'prefix': 'render_'
+      'body': 'render'
+
 
 
 
@@ -120,86 +693,3 @@
     'Safe Join':
       'prefix': 'safe_join'
       'body': 'safe_join(array, tag_separate)'
-
-#ActionView::Helpers::DateHelper
-    'date_select':
-      'prefix': 'date_select'
-      'body': 'date_select'
-
-    'datetime_select':
-      'prefix': 'datetime_select'
-      'body': 'datetime_select'
-
-    'distance_of_time_in_words':
-      'prefix': 'distance_of_time_in_words'
-      'body': 'distance_of_time_in_words'
-
-    'distance_of_time_in_words_to_now':
-      'prefix': 'distance_of_time_in_words_to_now'
-      'body': 'distance_of_time_in_words_to_now'
-
-    'select_date':
-      'prefix': 'select_date'
-      'body': 'select_date'
-
-    'select_datetime':
-      'prefix': 'select_datetime'
-      'body': 'select_datetime'
-
-    'select_day':
-      'prefix': 'select_day'
-      'body': 'select_day'
-
-    'select_hour':
-      'prefix': 'select_hour'
-      'body': 'select_hour'
-
-    'select_minute':
-      'prefix': 'select_minute'
-      'body': 'select_minute'
-
-    'select_month':
-      'prefix': 'select_month'
-      'body': 'select_month'
-
-    'select_second':
-      'prefix': 'select_second'
-      'body': 'select_second'
-
-    'select_time':
-      'prefix': 'select_time'
-      'body': 'select_time'
-
-    'select_year':
-      'prefix': 'select_year'
-      'body': 'select_year'
-
-    'time_ago_in_words':
-      'prefix': 'time_ago_in_words'
-      'body': 'time_ago_in_words'
-
-    'time_select':
-      'prefix': 'time_select'
-      'body': 'time_select'
-
-    'time_tag':
-      'prefix': 'time_tag'
-      'body': 'time_tag'
-
-#ActionView::Helpers::CacheHelper
-    'cache':
-      'prefix': 'cache_method'
-      'body': '<% cache project do %>\n\n<% end %>'
-
-    'cache_fragment_name':
-      'prefix': 'cache_fragment_name'
-      'body': 'cache_fragment_name'
-
-    'cache_if':
-      'prefix': 'cache_if'
-      'body': '<% cache_if admin?, project do %>\n\n<% end %>'
-
-    'cache_unless':
-      'prefix': 'cache_unless'
-      'body': '<% cache_unless admin?, project do %>\n\n<% end %>'
-
