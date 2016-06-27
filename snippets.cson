@@ -64,9 +64,83 @@
       'body': 'safe_join(array, tag_separate)'
 
 #ActionView::Helpers::DateHelper
-    'Date Select':
+    'date_select':
       'prefix': 'date_select'
+      'body': 'date_select'
 
-    'Concat':
-      'prefix': 'concat'
-      'body': 'concat'
+    'datetime_select':
+      'prefix': 'datetime_select'
+      'body': 'datetime_select'
+
+    'distance_of_time_in_words':
+      'prefix': 'distance_of_time_in_words'
+      'body': 'distance_of_time_in_words'
+
+    'distance_of_time_in_words_to_now':
+      'prefix': 'distance_of_time_in_words_to_now'
+      'body': 'distance_of_time_in_words_to_now'
+
+    'select_date':
+      'prefix': 'select_date'
+      'body': 'select_date'
+
+    'select_datetime':
+      'prefix': 'select_datetime'
+      'body': 'select_datetime'
+
+    'select_day':
+      'prefix': 'select_day'
+      'body': 'select_day'
+
+    'select_hour':
+      'prefix': 'select_hour'
+      'body': 'select_hour'
+
+    'select_minute':
+      'prefix': 'select_minute'
+      'body': 'select_minute'
+
+    'select_month':
+      'prefix': 'select_month'
+      'body': 'select_month'
+
+    'select_second':
+      'prefix': 'select_second'
+      'body': 'select_second'
+
+    'select_time':
+      'prefix': 'select_time'
+      'body': 'select_time'
+
+    'select_year':
+      'prefix': 'select_year'
+      'body': 'select_year'
+
+    'time_ago_in_words':
+      'prefix': 'time_ago_in_words'
+      'body': 'time_ago_in_words'
+
+    'time_select':
+      'prefix': 'time_select'
+      'body': 'time_select'
+
+    'time_tag':
+      'prefix': 'time_tag'
+      'body': 'time_tag'
+
+#ActionView::Helpers::CacheHelper
+    'cache':
+      'prefix': 'cache_method'
+      'body': '<% cache project do %>\n\n<% end %>'
+
+    'cache_fragment_name':
+      'prefix': 'cache_fragment_name'
+      'body': 'cache_fragment_name'
+
+    'cache_if':
+      'prefix': 'cache_if'
+      'body': '<% cache_if admin?, project do %>\n\n<% end %>'
+
+    'cache_unless':
+      'prefix': 'cache_unless'
+      'body': '<% cache_unless admin?, project do %>\n\n<% end %>'
