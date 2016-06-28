@@ -5,7 +5,7 @@
 #
 # You can create a new snippet in this file by typing "snip" and then hitting
 # tab.
-# SergioD
+#
 # An example CoffeeScript snippet to expand log to console.log:
 #
 # '.source.coffee':
@@ -19,7 +19,6 @@
 # If you are unfamiliar with CSON, you can read more about it in the
 # Atom Flight Manual:
 # https://atom.io/docs/latest/using-atom-basic-customization#cson
-
 
 #erb/html
   '.text.html.ruby, .text.html.erb, .text.html.haml':
@@ -871,3 +870,481 @@
     'to_partial_path':
       'prefix': 'to_partial_path_'
       'body': 'to_partial_path'
+
+#Other
+    'Whitespace':
+      'prefix': 'whitespace_'
+      'body': '&nbsp;'
+
+    'Whitespace nbsp':
+      'prefix': 'nbsp_'
+      'body': '&nbsp;'
+
+    'Method':
+      'prefix': 'method_'
+      'body': 'method: :$1'
+
+    'Rows':
+      'prefix': 'rows_'
+      'body': 'rows: $1'
+
+    'Placeholder':
+      'prefix': 'placeholder_'
+      'body': 'placeholder: \'$1\''
+
+    'Class':
+      'prefix': 'class_'
+      'body': 'class: \'$1\''
+
+    'Capitalize':
+      'prefix': 'capitalize_'
+      'body': 'capitalize'
+
+    'Remote':
+      'prefix': 'remote_'
+      'body': 'remote: true'
+
+    'JS Data':
+      'prefix': 'data_'
+      'body': 'data: { confirm: \'Are you sure?\'}'
+
+    'Simple Errors From':
+      'prefix': 'errors_from_'
+      'body': "<% if @object.errors.any? %>\n
+            \t <div id=\"error_explanation\">\n
+              \t\t <h2><%= pluralize(@object.errors.count, \"error\") %> prohibited this link from being saved:</h2>\n
+
+              \t\t <ul>\n
+              \t\t\t <% @object.errors.full_messages.each do |message| %>\n
+                \t\t\t\t <li><%= message %></li>\n
+              \t\t\t <% end %>\n
+              \t\t </ul>\n
+            \t </div>\n<% end %>\n"
+
+
+    'Simple Flash From':
+      'prefix': 'flash_from_'
+      'body': "<% flash.each do |name, msg| %>\n
+          			\t<div class=\"alert alert-info alert-dismissible\" role=\"alert\">\n
+          			\t\t<button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-label=\"Close\">\n
+                  \t\t\t<span aria-hidden=\"true\">&times;</span>\n
+                \t\t</button>\n
+          				\t\t<%= content_tag(:div, msg, class: \"alert-\#{name}\") %>\n
+          			\t</div>\n<% end %>\n"
+
+    'Autofocus':
+      'prefix': 'autofocus_'
+      'body': 'autofocus: true'
+
+    'Autocomplete':
+      'prefix': 'autocomplete_'
+      'body': 'autocomplete: \"off\"'
+
+
+
+
+#erb/html/ruby
+  '.text.html.ruby, .text.html.erb, .text.html.haml, .source.ruby':
+
+#String < Object
+    'Acts like string?':
+      'prefix': 'acts_like_string?_'
+      'body': 'acts_like_string?'
+
+    'At':
+      'prefix': 'at_'
+      'body': 'at'
+
+    'Blank?':
+      'prefix': 'blank?_'
+      'body': 'blank?'
+
+    'Camelcase':
+      'prefix': 'camelcase_'
+      'body': 'camelcase'
+
+    'Camelize':
+      'prefix': 'camelize_'
+      'body': 'camelize'
+
+    'Classify':
+      'prefix': 'classify_'
+      'body': 'classify'
+
+    'Constantize':
+      'prefix': 'constantize_'
+      'body': 'constantize'
+
+    'Dasherize':
+      'prefix': 'dasherize_'
+      'body': 'dasherize'
+
+    'Deconstantize':
+      'prefix': 'deconstantize_'
+      'body': 'deconstantize'
+
+    'Demodulize':
+      'prefix': 'demodulize_'
+      'body': 'demodulize'
+
+    'Exclude?':
+      'prefix': 'exclude?_'
+      'body': 'exclude?'
+
+    'First':
+      'prefix': 'first_'
+      'body': 'first'
+
+    'Foreign key':
+      'prefix': 'foreign_key_'
+      'body': 'foreign_key'
+
+    'From':
+      'prefix': 'from_'
+      'body': 'from'
+
+    'Html safe':
+      'prefix': 'html_safe_'
+      'body': 'html_safe'
+
+    'Humanize':
+      'prefix': 'humanize_'
+      'body': 'humanize'
+
+    'In time zone':
+      'prefix': 'in_time_zone_'
+      'body': 'in_time_zone'
+
+    'Indent':
+      'prefix': 'indent_'
+      'body': 'indent'
+
+    'Indent!':
+      'prefix': 'indent!_'
+      'body': 'indent!'
+
+    'Inquiry':
+      'prefix': 'inquiry_'
+      'body': 'inquiry'
+
+    'Is utf8?':
+      'prefix': 'is_utf8?_'
+      'body': 'is_utf8?'
+
+    'Last':
+      'prefix': 'last_'
+      'body': 'last'
+
+    'Mb chars':
+      'prefix': 'mb_chars_'
+      'body': 'mb_chars'
+
+    'Parameterize':
+      'prefix': 'parameterize_'
+      'body': 'parameterize'
+
+    'Pluralize':
+      'prefix': 'pluralize_'
+      'body': 'pluralize'
+
+    'Remove':
+      'prefix': 'remove_'
+      'body': 'remove'
+
+    'Remove!':
+      'prefix': 'remove!_'
+      'body': 'remove!'
+
+    'Safe constantize':
+      'prefix': 'safe_constantize_'
+      'body': 'safe_constantize'
+
+    'Singularize':
+      'prefix': 'singularize_'
+      'body': 'singularize'
+
+    'Squish':
+      'prefix': 'squish_'
+      'body': 'squish'
+
+    'Squish!':
+      'prefix': 'squish!_'
+      'body': 'squish!'
+
+    'Strip heredoc':
+      'prefix': 'strip_heredoc_'
+      'body': 'strip_heredoc'
+
+    'Tableize':
+      'prefix': 'tableize_'
+      'body': 'tableize'
+
+    'Titlecase':
+      'prefix': 'titlecase_'
+      'body': 'titlecase'
+
+    'Titleize':
+      'prefix': 'titleize_'
+      'body': 'titleize'
+
+    'To':
+      'prefix': 'to_'
+      'body': 'to'
+
+    'To date':
+      'prefix': 'to_date_'
+      'body': 'to_date'
+
+    'To datetime':
+      'prefix': 'to_datetime_'
+      'body': 'to_datetime'
+
+    'To time':
+      'prefix': 'to_time_'
+      'body': 'to_time'
+
+    'Truncate':
+      'prefix': 'truncate_'
+      'body': 'truncate'
+
+    'Truncate words':
+      'prefix': 'truncate_words_'
+      'body': 'truncate_words'
+
+    'Underscore':
+      'prefix': 'underscore_'
+      'body': 'underscore'
+
+
+#Time < Object
+    '-':
+      'prefix': '-_'
+      'body': '-'
+
+    '<=>':
+      'prefix': '<=>_'
+      'body': '<=>'
+
+    '===':
+      'prefix': '===_'
+      'body': '==='
+
+    'Dump':
+      'prefix': 'dump_'
+      'body': 'dump'
+
+    'Dump without zone':
+      'prefix': 'dump_without_zone_'
+      'body': 'dump_without_zone'
+
+    'Load':
+      'prefix': 'load_'
+      'body': 'load'
+
+    'Load without zone':
+      'prefix': 'load_without_zone_'
+      'body': 'load_without_zone'
+
+    'Acts like time?':
+      'prefix': 'acts_like_time?_'
+      'body': 'acts_like_time?'
+
+    'Advance':
+      'prefix': 'advance_'
+      'body': 'advance'
+
+    'Ago':
+      'prefix': 'ago_'
+      'body': 'ago'
+
+    'All day':
+      'prefix': 'all_day_'
+      'body': 'all_day'
+
+    'At':
+      'prefix': 'at_'
+      'body': 'at'
+
+    'At beginning of day':
+      'prefix': 'at_beginning_of_day_'
+      'body': 'at_beginning_of_day'
+
+    'At beginning of hour':
+      'prefix': 'at_beginning_of_hour_'
+      'body': 'at_beginning_of_hour'
+
+    'At beginning of minute':
+      'prefix': 'at_beginning_of_minute_'
+      'body': 'at_beginning_of_minute'
+
+    'At end of day':
+      'prefix': 'at_end_of_day_'
+      'body': 'at_end_of_day'
+
+    'At end of hour':
+      'prefix': 'at_end_of_hour_'
+      'body': 'at_end_of_hour'
+
+    'At end of minute':
+      'prefix': 'at_end_of_minute_'
+      'body': 'at_end_of_minute'
+
+    'At midday':
+      'prefix': 'at_midday_'
+      'body': 'at_midday'
+
+    'At middle of day':
+      'prefix': 'at_middle_of_day_'
+      'body': 'at_middle_of_day'
+
+    'At midnight':
+      'prefix': 'at_midnight_'
+      'body': 'at_midnight'
+
+    'At noon':
+      'prefix': 'at_noon_'
+      'body': 'at_noon'
+
+    'At with coercion':
+      'prefix': 'at_with_coercion_'
+      'body': 'at_with_coercion'
+
+    'At without coercion':
+      'prefix': 'at_without_coercion_'
+      'body': 'at_without_coercion'
+
+    'Beginning of day':
+      'prefix': 'beginning_of_day_'
+      'body': 'beginning_of_day'
+
+    'Beginning of hour':
+      'prefix': 'beginning_of_hour_'
+      'body': 'beginning_of_hour'
+
+    'Beginning of minute':
+      'prefix': 'beginning_of_minute_'
+      'body': 'beginning_of_minute'
+
+    'Change':
+      'prefix': 'change_'
+      'body': 'change'
+
+    'Compare with coercion':
+      'prefix': 'compare_with_coercion_'
+      'body': 'compare_with_coercion'
+
+    'Compare without coercion':
+      'prefix': 'compare_without_coercion_'
+      'body': 'compare_without_coercion'
+
+    'Current':
+      'prefix': 'current_'
+      'body': 'current'
+
+    'Days in month':
+      'prefix': 'days_in_month_'
+      'body': 'days_in_month'
+
+    'End of day':
+      'prefix': 'end_of_day_'
+      'body': 'end_of_day'
+
+    'End of hour':
+      'prefix': 'end_of_hour_'
+      'body': 'end_of_hour'
+
+    'End of minute':
+      'prefix': 'end_of_minute_'
+      'body': 'end_of_minute'
+
+    'Eql?':
+      'prefix': 'eql?_'
+      'body': 'eql?'
+
+    'Eql with coercion':
+      'prefix': 'eql_with_coercion_'
+      'body': 'eql_with_coercion'
+
+    'Eql without coercion':
+      'prefix': 'eql_without_coercion_'
+      'body': 'eql_without_coercion'
+
+    'Find zone':
+      'prefix': 'find_zone_'
+      'body': 'find_zone'
+
+    'Find zone!':
+      'prefix': 'find_zone!_'
+      'body': 'find_zone!'
+
+    'Formatted offset':
+      'prefix': 'formatted_offset_'
+      'body': 'formatted_offset'
+
+    'In':
+      'prefix': 'in_'
+      'body': 'in'
+
+    'Midday':
+      'prefix': 'midday_'
+      'body': 'midday'
+
+    'Middle of day':
+      'prefix': 'middle_of_day_'
+      'body': 'middle_of_day'
+
+    'Midnight':
+      'prefix': 'midnight_'
+      'body': 'midnight'
+
+    'Minus with coercion':
+      'prefix': 'minus_with_coercion_'
+      'body': 'minus_with_coercion'
+
+    'Minus without coercion':
+      'prefix': 'minus_without_coercion_'
+      'body': 'minus_without_coercion'
+
+    'Minus without duration':
+      'prefix': 'minus_without_duration_'
+      'body': 'minus_without_duration'
+
+    'Noon':
+      'prefix': 'noon_'
+      'body': 'noon'
+
+    'Seconds since midnight':
+      'prefix': 'seconds_since_midnight_'
+      'body': 'seconds_since_midnight'
+
+    'Seconds until end of day':
+      'prefix': 'seconds_until_end_of_day_'
+      'body': 'seconds_until_end_of_day'
+
+    'Since':
+      'prefix': 'since_'
+      'body': 'since'
+
+    'To default s':
+      'prefix': 'to_default_s_'
+      'body': 'to_default_s'
+
+    'To formatted s':
+      'prefix': 'to_formatted_s_'
+      'body': 'to_formatted_s'
+
+    'To s':
+      'prefix': 'to_s_'
+      'body': 'to_s'
+
+    'Use zone':
+      'prefix': 'use_zone_'
+      'body': 'use_zone'
+
+    'Zone':
+      'prefix': 'zone_'
+      'body': 'zone'
+
+    'Zone=':
+      'prefix': 'zone=_'
+      'body': 'zone='
