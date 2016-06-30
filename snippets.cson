@@ -14,14 +14,14 @@
 #     'body': 'console.log $1'
 #
 # Each scope (e.g. '.source.coffee' above) can only be declared once.
-#
+# SergioD
 # This file uses CoffeeScript Object Notation (CSON).
 # If you are unfamiliar with CSON, you can read more about it in the
 # Atom Flight Manual:
 # https://atom.io/docs/latest/using-atom-basic-customization#cson
 
 #erb/html
-  '.text.html.ruby, .text.html.erb, .text.html.haml':
+  '.text.html.ruby, .text.html.erb, .text.slim.erb, .text.html.haml':
 #ActionView::Helpers::AssetTagHelper
     'audio_tag':
       'prefix': 'audio_tag_'
@@ -940,11 +940,17 @@
       'prefix': 'autocomplete_'
       'body': 'autocomplete: \"off\"'
 
+    'Required':
+      'prefix': 'required_'
+      'body': 'required: true'
+
+
+
 
 
 
 #erb/html/ruby
-  '.text.html.ruby, .text.html.erb, .text.html.haml, .source.ruby':
+  '.text.html.ruby, .text.html.erb, .text.slim.erb, .text.html.haml, .source.ruby':
 
 #String < Object
     'Acts like string?':
@@ -1348,3 +1354,99 @@
     'Zone=':
       'prefix': 'zone=_'
       'body': 'zone='
+
+
+#ruby
+#Devise
+  '.source.ruby':
+    'Authenticate MODEL':
+      'prefix': 'authenticate_'
+      'body': 'authenticate_$1!'
+      
+    'Signed in?':
+      'prefix': '_signed_in?_'
+      'body': '_signed_in?'
+
+    'Current user':
+      'prefix': 'current_user_'
+      'body': 'current_user'
+
+    'Session':
+      'prefix': '_session_'
+      'body': '_session'
+
+#
+    'Only':
+      'prefix': 'only_'
+      'body': 'only: [$1]'
+
+    'Except':
+      'prefix': 'except_'
+      'body': 'except: [$1]'
+
+#ActiveRecord::Associations::ClassMethods
+    'Belongs to':
+      'prefix': 'belongs_to_'
+      'body': 'belongs_to'
+
+    'Has one':
+      'prefix': 'has_one_'
+      'body': 'has_one'
+
+    'Has many':
+      'prefix': 'has_many_'
+      'body': 'has_many'
+
+    'Has and belongs to many':
+      'prefix': 'has_and_belongs_to_many_'
+      'body': 'has_and_belongs_to_many'
+
+#ActiveModel::Validations::HelperMethods
+    'Validates absence of':
+      'prefix': 'validates_absence_of_'
+      'body': 'validates_absence_of'
+
+    'Validates acceptance of':
+      'prefix': 'validates_acceptance_of_'
+      'body': 'validates_acceptance_of'
+
+    'Validates confirmation of':
+      'prefix': 'validates_confirmation_of_'
+      'body': 'validates_confirmation_of'
+
+    'Validates exclusion of':
+      'prefix': 'validates_exclusion_of_'
+      'body': 'validates_exclusion_of'
+
+    'Validates format of':
+      'prefix': 'validates_format_of_'
+      'body': 'validates_format_of'
+
+    'Validates inclusion of':
+      'prefix': 'validates_inclusion_of_'
+      'body': 'validates_inclusion_of'
+
+    'Validates length of':
+      'prefix': 'validates_length_of_'
+      'body': 'validates_length_of'
+
+    'Validates numericality of':
+      'prefix': 'validates_numericality_of_'
+      'body': 'validates_numericality_of'
+
+    'Validates presence of':
+      'prefix': 'validates_presence_of_'
+      'body': 'validates_presence_of'
+
+    'Validates size of':
+      'prefix': 'validates_size_of_'
+      'body': 'validates_size_of'
+
+#ActiveRecord::Validations::ClassMethods
+    'Validates associated':
+      'prefix': 'validates_associated_'
+      'body': 'validates_associated'
+
+    'Validates uniqueness of':
+      'prefix': 'validates_uniqueness_of_'
+      'body': 'validates_uniqueness_of'
