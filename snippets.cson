@@ -1357,12 +1357,24 @@
 
 
 #ruby
+    'Attr accessor':
+      'prefix': 'attr_accessor_'
+      'body': 'attr_accessor'
+
+    'Attr reader':
+      'prefix': 'attr_reader_'
+      'body': 'attr_reader'
+
+    'Attr writer':
+      'prefix': 'attr_writer_'
+      'body': 'attr_writer'
+      
 #Devise
   '.source.ruby':
     'Authenticate MODEL':
       'prefix': 'authenticate_'
       'body': 'authenticate_$1!'
-      
+
     'Signed in?':
       'prefix': '_signed_in?_'
       'body': '_signed_in?'
@@ -1450,3 +1462,80 @@
     'Validates uniqueness of':
       'prefix': 'validates_uniqueness_of_'
       'body': 'validates_uniqueness_of'
+
+#ActiveSupport::Multibyte::Chars < Object
+    'Capitalize':
+      'prefix': 'capitalize_'
+      'body': 'capitalize'
+
+    'Compose':
+      'prefix': 'compose_'
+      'body': 'compose'
+
+    'Consumes?':
+      'prefix': 'consumes?_'
+      'body': 'consumes?'
+
+    'Decompose':
+      'prefix': 'decompose_'
+      'body': 'decompose'
+
+    'Downcase':
+      'prefix': 'downcase_'
+      'body': 'downcase'
+
+    'Grapheme length':
+      'prefix': 'grapheme_length_'
+      'body': 'grapheme_length'
+
+    'Limit':
+      'prefix': 'limit_'
+      'body': 'limit'
+
+    'Method missing':
+      'prefix': 'method_missing_'
+      'body': 'method_missing'
+
+    'New':
+      'prefix': 'new_'
+      'body': 'new'
+
+    'Normalize':
+      'prefix': 'normalize_'
+      'body': 'normalize'
+
+    'Respond to missing?':
+      'prefix': 'respond_to_missing?_'
+      'body': 'respond_to_missing?'
+
+    'Reverse':
+      'prefix': 'reverse_'
+      'body': 'reverse'
+
+    'Slice!':
+      'prefix': 'slice!_'
+      'body': 'slice!'
+
+    'Split':
+      'prefix': 'split_'
+      'body': 'split'
+
+    'Swapcase':
+      'prefix': 'swapcase_'
+      'body': 'swapcase'
+
+    'Tidy bytes':
+      'prefix': 'tidy_bytes_'
+      'body': 'tidy_bytes'
+
+    'Titlecase':
+      'prefix': 'titlecase_'
+      'body': 'titlecase'
+
+    'Titleize':
+      'prefix': 'titleize_'
+      'body': 'titleize'
+
+    'Upcase':
+      'prefix': 'upcase_'
+      'body': 'upcase'
